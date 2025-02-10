@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/KB.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwality Banquet-Menu</title>
+    <link rel="stylesheet" href="design.css">
+    <style> 
+       .container {
+            display: flex; /* Enables Flexbox */
+            justify-content: space-between; /* Adjusts spacing */
+            gap: 10px; /* Space between divs */
+            padding: 10px;
+        }
+        .box {
+            width: 50%; /* Each div takes 50% of the container */
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+       @media (max-width: 1300px) {
+          
+           .info{
+               text-align: center;
+           }
+           .overlay-box p{
+               font-size: 15px;
+               padding: 0px;
+           }
+           .overlay-box{
+               margin-left: 5%;    
+               width: auto;
+               height: auto;
+               padding: 2px;
+           }
+           h2{
+               font-size:large;
+           }
+           .container{
+            display: block;
+           }
+           .box{
+            width: 100%;
+           }
+       }
+       @media (max-width: 800px) {
+        .container{
+            display: contents;
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            padding: 0;
+        }
+        img{
+           width: 400px;
+        }
+       }
+
+   </style>
+</head>
+<body style="background-color: antiquewhite;">
+   <div class="header-content2"  >
+       <a href="index.html"><img src="images/KB.jpg" alt="Company Logo" class="logo"></a>
+   </div> 
+   <div class="container">
+    <div class="box"><img src="images/1.png" alt=""></div>
+    <div class="box"><img src="images/2.png" alt=""></div>
+   </div>
+   <div class="container">
+    <div class="box"><img src="images/3.png" alt=""></div>
+    <div class="box"><img src="images/4.png" alt=""></div>
+   </div> 
+   <div style="text-align: center; margin: 10px;">
+    <a href="halls.html#formBook" class="a" id="book">Book now</a>
+   </div> 
+   
+    </body>
+<footer>
+    <div class="footer1">
+        <div class="col-1">
+            <h2>CONTACT INFO</h2>
+            <p><b>Address:</b><br>
+            Kwality Banquet <br>
+            Buddhanagar, Kathmandu<br>
+            <b>Email:</b><br>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=madancsta789@gmail.com&su=Your%20Subject&body=Your%20Message" target="_blank" class="numbers">kwalitybanquet00@gmail.com</a><br>
+            <b>Tel. No. :</b><a href="tel:01-12345678" class="numbers"> 01-12345678</a> <br>
+            <b>Phone No. :</b><a href="tel:9876543210" class="numbers">985-1182103 </a> <br>
+            <figure>
+                <a href="https://www.instagram.com/kwalitybanquet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"> <img src="images/insta.jpg" alt="Instagram" class="logo"></a>
+                <a href="https://www.facebook.com/profile.php?id=100063627155882" target="_blank"> <img src="images/fb.jpg" class="logo"></a>
+           </figure></p>
+        </div>
+
+         <div class="col-2">
+            <h2>Useful links</h2>
+            <a href="index.html#home">Home</a><br>
+            <a href="index.html#about">About us</a>
+            <br>
+            <a href="index.html#services">Services</a><br>
+            <a href="index.html#contact" >Contact us</a>      
+        </div>
+        
+        <div class="col-3">
+            <h2>SUBSCRIBE NEWSLETTER</h2><br>
+            <p>Enter your E-mail and get all the latest information on events and offers.</p>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c668b3ae-a6e7-4e22-8078-0073d3012741">
+            <input type="text" required name="email">
+            <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer2">
+        <p>&copy; 2024 Kwality Banquet. All rights reserved.</p>
+    </div>
+</footer>
+<script src="code.js"></script>
+</body>
+</html>

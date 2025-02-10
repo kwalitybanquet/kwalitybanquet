@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/KB.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwality Banquet</title>
+    <link rel="stylesheet" href="design.css">
+    <style>
+         .overlay-box {
+            top: 0;
+            margin-left: 25%;
+            width: 50%;
+            background: rgba(255, 255, 255, 0.4); /* Semi-transparent white background */
+            backdrop-filter: blur(1px); /* Adjust blur intensity as needed */
+            color: #000; /* Text color */
+            font-size: 19px; /* Adjust font size as needed */
+            font-family:sans-serif;
+            text-align:justify;
+            padding: 40px;
+        }
+        @media (max-width: 1300px) {
+           
+            .info{
+                text-align: center;
+            }
+            .overlay-box p{
+                font-size: 15px;
+                padding: 0px;
+            }
+            .overlay-box{
+                margin-left: 5%;    
+                width: auto;
+                height: auto;
+                padding: 2px;
+            }
+            h2{
+                font-size:large;
+            }
+            
+        }
+
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+    <div class="header-content2"  >
+        <a href="index.html"><img src="images/KB.jpg" alt="Company Logo" class="logo"></a>
+    </div> 
+    <div id="header" style="margin: 10px; padding: 10px;">
+    <div style="background-image: url(images/hall1a.jpg); " class="image" id="hall_1">
+        <h2 style="font-family:sans-serif;">Hall 1(Chhap)</h2>
+        <div class="overlay-box">
+            <p >Chhap is the perfect choice for those seeking a spacious and
+                versatile venue. With its elegant design and modern amenities, this hall offers ample room for large gatherings, such as weddings, 
+                corporate events, and celebrations. Its stylish decor and flexible layout ensure that every event held here is both memorable and 
+                comfortable. Chhap combines sophistication with functionality, making it an ideal setting for your grand occasions.</p>
+      </div>
+    </div>
+    <div style="background-image: url(images/hall2a.JPG); " class="image" id="hall_2">
+        <h2 style="font-family:sans-serif;">Hall 2(Chhanga)</h2>
+        <div class="overlay-box">
+            <p >Chhanga boasts a charming and intimate atmosphere, ideal for 
+                smaller, more personal events. Its tasteful decor and cozy ambiance create a warm and inviting space for gatherings such as 
+                anniversaries, intimate receptions, or family celebrations. Chhanga provides a perfect blend of elegance and comfort, ensuring 
+                that every event is both special and memorable.</p>
+       </div>
+        </div>
+    <div style="background-image: url(images/a.jpg); " class="image" id="hall_3">
+        <h2 style="font-family:sans-serif;">Hall 3(Bhirpani)</h2>
+        <div class="overlay-box">
+            <p>Bhirpani offers a unique and contemporary space, designed to 
+                accommodate a range of events from sophisticated soirées to lively parties. With its modern amenities and chic decor, Bhirpani is
+                 well-suited for both formal and informal gatherings. Its versatile setup and stylish environment make it an excellent choice for 
+                 those looking to host events with a touch of modern flair.</p>
+         </div>
+        </div>
+</div>
+<div class="form-cont" id="formBook">
+<div class="container1" >
+    <div class="form-box login">
+        <form name="bookForm" id="bookForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c668b3ae-a6e7-4e22-8078-0073d3012741">  
+                <table style="text-align: left;" >
+                    <tr><h3>Fill the form for booking!!</h3> </tr>
+                <tr>
+                <td><p class="input-a">Name: </p></td><td><input type="text" name="name" id="client"></td></tr>
+                <tr>
+                <td><p class="input-a">Contact: </p></td><td><input type="tel"  name="phone" placeholder="977+" pattern="[9]{1}[0-9]{9}" id="contact"></td></tr>
+                <tr>
+                    <td><p class="input-a">Gender: </p></td><td>
+                    <input type="radio" name="gender" value="male" checked>Male 
+                    <input type="radio" name="gender" value="female">Female
+                </td></tr>
+                <tr>
+                <td><p class="input-a">Email: </p></td><td><input type="email"  placeholder="example@gmail.com" name="email" id="email"></td></tr>
+                <tr>
+                    <td><p class="input-a">Date: </p></td><td><input type="date" name="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="input-a">Guests:</p>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Guest >= 50" name="guest" id="guest">
+                    </td>
+                </tr>
+                <tr>
+                <td><p class="input-a">Hall: </p></td><td>
+                <input type="checkbox" name="hall" value="hall1" id="hall1" checked>Hall 1(Chhap) <br>
+                <input type="checkbox" name="hall" value="hall2" id="hall2"> Hall 2(Chhanga) <br>
+                <input type="checkbox" name="hall" value="hall3" id="hall3"> Hall 3(Bhirpani)<br><br>            
+                </td></tr>
+                <tr>
+                    <td><p class="input-a">Food: </p></td><td>
+                    <input type="radio" name="food" value="Veg" checked> Veg 
+                    <input type="radio" name="food" value="Non-Veg" > Non-Veg       
+                    </td><td><a class="menu" style="text-decoration: none;" href="menu.html">Menu</a></td></tr>
+                </table>
+        <button type="submit" id="book">Book</button><br>
+        <label style="color: red; size: 10px;" id="alert"></label>
+    </form>
+    </div>
+</div>
+</div>
+<footer>
+    <div class="footer1">
+        <div class="col-1">
+            <h2>CONTACT INFO</h2>
+            <p><b>Address:</b><br>
+            Kwality Banquet <br>
+            Buddhanagar, Kathmandu<br>
+            <b>Email:</b><br>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=madancsta789@gmail.com&su=Your%20Subject&body=Your%20Message" target="_blank" class="numbers">kwalitybanquet00@gmail.com</a><br>
+            <b>Tel. No. :</b><a href="tel:01-12345678" class="numbers"> 01-12345678</a> <br>
+            <b>Phone No. :</b><a href="tel:9876543210" class="numbers">985-1182103 </a> <br>
+            <figure>
+                <a href="https://www.instagram.com/kwalitybanquet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"> <img src="images/insta.jpg" alt="Instagram" class="logo"></a>
+                <a href="https://www.facebook.com/profile.php?id=100063627155882" target="_blank"> <img src="images/fb.jpg" class="logo"></a>
+           </figure></p>
+        </div>
+
+         <div class="col-2">
+            <h2>Useful links</h2>
+            <a href="index.html#home">Home</a><br>
+            <a href="index.html#about">About us</a><br>
+            <a href="index.html#services">Services</a><br>
+            <a href="index.html#contact" >Contact us</a><br>
+            <a href="menu.html">Menu</a>       
+        </div>
+        
+        <div class="col-3">
+            <h2>SUBSCRIBE NEWSLETTER</h2><br>
+            <p>Enter your E-mail and get all the latest information on events and offers.</p>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c668b3ae-a6e7-4e22-8078-0073d3012741">
+            <input type="text" required name="email">
+            <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer2">
+        <p>&copy; 2024 Kwality Banquet. All rights reserved.</p>
+    </div>
+</footer>
+<script src="code.js"></script>
+</body>
+</html>
